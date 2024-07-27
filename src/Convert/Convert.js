@@ -28,27 +28,32 @@ const convertDocxToJSONAndCSV = async (test) => {
         SolicitareaClientului: {
             "1": sections[1],
             "2": sections[2],
-            "3": sections[3]
+            "3": sections[3],
+            "4": sections[4],
+            "5": sections[5],
+
         },
         Oferta: {
             ScopulDocumentului: {
-                Descriere: sections[4],
-                Etape: sections.slice(5, 8).join(' '),
-                Detalii: sections.slice(8, 13).join(' '),
-                Definitii: sections.slice(13, 26).join(' ')
+                Descriere: sections[6],
+                Etape: sections.slice(7, 10).join(' '),
+                Detalii: sections.slice(10, 16).join(' '),
+                Definitii: sections.slice(17, 19).join(' ')
             },
             PropunereStructura: {
-                Structuri: sections.slice(27, 53).join(' ')
+            SectiuneDeComenziSiStocuri: sections.slice(21,25),
+            SecțiuneDeLivrareSiGestiune: sections.slice(26,29),
+            AutomatizareaDocumentelor: sections.slice(30,32),
+            GestionareaCashFlow: sections.slice(33,36),
+            IntegrareaCuWinMentor: sections.slice(37,39)
             },
             SugestiiSuplimentare: {
-                Descriere: sections[54]
+                Descriere: sections.slice(40,42)
             },
             PretSiTimpDeImplementare: {
-                FaraSugestii: sections.slice(56, 58).join(' '),
-                TimpEstimatDeLivrare: sections.slice(59, 61).join(' '),
-                Suplimentar: sections.slice(61, 63).join(' ')
-            },
-            TermeniDeAchizitie: sections.slice(64).join(' ')
+                TimpEstimatDeLivrare: sections.slice(43, 46).join(' '),
+                Suplimentar: sections.slice(46, 49).join(' ')
+            }
         }
     };
 
@@ -61,4 +66,4 @@ const convertDocxToJSONAndCSV = async (test) => {
     console.log('Fișierul a fost convertit și salvat cu succes!');
 };
 
-convertDocxToJSONAndCSV('Test-1');
+convertDocxToJSONAndCSV('Test-2');
