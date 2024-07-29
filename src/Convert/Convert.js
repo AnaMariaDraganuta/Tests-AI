@@ -26,25 +26,23 @@ const convertDocxToJSONAndCSV = async (test) => {
 
     const offer = {
         SolicitareaClientului: {
-            Introducere: sections[0],
-            Detalii: sections.slice(1, 8).join(' '),  
+            AplicatieClienti: sections.slice(0, 11).join(' '),
+            AplicatieAngajati: sections.slice(12, 15).join(' '),
+            AplicatieAdmin: sections.slice(16, 21).join(' '),
+            Logistica: sections[22],
+            Website: sections[23],
+            Cashflow: sections[24]
         },
         Oferta: {
-            ScopulDocumentului: {
-                Descriere: sections[9],
-                Etape: sections.slice(10, 13).join(' '),  
-                Preturi: sections.slice(13, 15).join(' ')
-            },
+            ScopulDocumentului: sections.slice(26, 34).join(' '),
             PropunereStructura: {
-                DezvoltareCRM: sections.slice(16, 23).join(' '),  
-                DezvoltareERP: sections.slice(24, 31).join(' '),  
-                SistemAdaugarePacienti: sections.slice(32, 34).join(' ')  
+                AplicatieClient: sections.slice(36, 53).join(' '),
+                AplicatieAngajat: sections.slice(54, 61).join(' '),
+                AplicatieAdmin: sections.slice(62, 77).join(' '),
+                ModificariWebsite: sections.slice(78, 81).join(' ')
             },
-            SugestiiSuplimentare: sections.slice(35, 43).join(' '),
-            PretSiTimpDeImplementare: {
-                TimpEstimativDeLivrare: sections[44],
-                Preturi: sections.slice(45, 47).join(' ')
-            }
+            SugestiiSuplimentare: sections[83],
+            PretSiTimpDeImplementare: sections.slice(84, 87).join(' ')
         }
     };
 
@@ -57,4 +55,4 @@ const convertDocxToJSONAndCSV = async (test) => {
     console.log('Fișierul a fost convertit și salvat cu succes!');
 };
 
-convertDocxToJSONAndCSV('Test-6');
+convertDocxToJSONAndCSV('Test-7');
