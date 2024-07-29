@@ -25,33 +25,27 @@ const convertDocxToJSONAndCSV = async (test) => {
     const sections = text.split('\n').filter(line => line.trim() !== '');
 
     const offer = {
-        SolicitareaClientului: sections[0],
+        SolicitareaClientului: sections[0], 
         Oferta: {
-            ScopulDocumentului: sections.slice(2, 10).join(' '),
+            ScopulDocumentului: sections.slice(1, 6).join(' '), 
             Definitii: {
-                API: sections.slice(12, 13).join(' '),
-                WordPress: sections.slice(14, 15).join(' '),
-                Plugin: sections.slice(16, 17).join(' '),
-                WooCommerce: sections.slice(18, 19).join(' '),
-                Widget: sections.slice(20, 21).join(' '),
-                Figma: sections.slice(22, 23).join(' ')
+                React: sections[7], 
+                NestJS: sections[8], 
+                Firebase: sections[9], 
+                API: sections[10] 
             },
             PropunereStructura: {
-                GraficaPersonalizata: sections.slice(26, 31).join(' '),
-                ConfigurareLoterie: sections.slice(33, 41).join(' '),
-                FlexibilitateControl: sections.slice(43, 48).join(' '),
-                NotificariEmail: sections[50],
-                WidgeturiLoterii: sections.slice(52, 54).join(' '),
-                IntrebariRaspunsuri: sections.slice(56, 58).join(' '),
-                InformatiiParticipanti: sections.slice(60, 63).join(' '),
-                LegareProcesatorPlati: sections.slice(65, 66).join(' ')
+                AutentificareGestionareConturi: sections.slice(11, 19).join(' '), 
+                GenerareDocumente: sections.slice(20, 27).join(' '), 
+                GestionareDocumente: sections.slice(28, 32).join(' '), 
+                ExpediereSemnareDigitale: sections.slice(33, 41).join(' ') 
             },
-            SugestiiSuplimentare: sections[68],
-            PretSiTimpDeImplementare: sections.slice(70, 77).join(' ')
+            SugestiiSuplimentare: sections.slice(42, 44).join(' '), 
+            PretSiTimpDeImplementare: sections.slice(45, 49).join(' ') 
         },
         TermeniDeAchizitie: {
-            Confidentialitate: sections[79],
-            PreturiFaraTVA: sections[80]
+            Confidentialitate: sections[50], 
+            PreturiFaraTVA: sections[51] 
         }
     };
 
@@ -59,10 +53,10 @@ const convertDocxToJSONAndCSV = async (test) => {
 
     const flattenedOffer = flattenObject(offer);
     const csv = Papa.unparse([flattenedOffer]);
+    
     fs.writeFileSync(csvFilePath, csv);
 
     console.log('Fisierul a fost convertit si salvat cu succes!');
 };
 
-convertDocxToJSONAndCSV('Test-8');
-
+convertDocxToJSONAndCSV('Test-9');
