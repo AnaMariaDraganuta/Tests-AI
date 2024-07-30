@@ -1,0 +1,46 @@
+{
+  "SolicitareaClientului": {
+      "Cerinte": [
+          "Automatizare documente in ERP unde sa primeasca automat urmatorul nr de serie si sa se tina cont de firma producatoare sau client; Au licenta achizitioata de la ONEDRIVE.",
+          "Realizare baza de date (import excel) in 2 categorii : cumparatori si furnizori;",
+          "Produse : adaugate din excel cu anul de productie, cod de identificare, denumire, parametrii de calitate lot ( doresc un filtru pe acest modul)",
+          "Cantitate : transporta doar TONE si este de 3 feluri : cantitate efectiva, cantitate tolerate (5, 10%) si cantitate la optiunea cuiva (comparator sau furnizor)",
+          "Livrare conditii: - incoterms - Locatie - Perioada de livrare : aleasa fie de comparator fie de furnizor.",
+          "Pret: sunt de 2 feluri. Fix stabilit din perioada de negociere si semnare ctr in 3 valute RON, USD si EUR.",
+          "Termen de plata : automatizare daca clientul e din RO pt moneda ( programul sa puna automat in LEI) si selectare manuala a perioadei sau sugestii de genul 30 zile.",
+          "Comision la partea de ctr",
+          "Raportare : pe contract, pe furnizor si pe comparator.",
+          "Facturi: evidenta facturi parteneri, in special pt ca facturile de la furnizori trec in registrul lor de evidente si sa poata observa cand un client a achitat."
+      ]
+  },
+  "Oferta": {
+      "ScopulDocumentului": "Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare: 1. Elaborarea unei diagrame logice pentru a defini arhitectura aplicației. 2. Crearea unei diagrame ER pentru a structura baza de date. 3. Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică.",
+      "Definitii": {
+          "CRM": "CRM este un acronim pentru 'Customer Relationship Management' sau 'Gestionarea Relațiilor cu Clienții' în română.",
+          "ERP": "ERP este un acronim pentru 'Enterprise Resource Planning' sau 'Planificarea Resurselor Enterprise' în română."
+      },
+      "PropunereStructura": {
+          "DezvoltareBaza": "Dezvoltarea ERP de bază folosind tehnologii moderne, cum ar fi React pentru interfața utilizatorului și MongoDB/Firebase pentru baza de date.",
+          "AplicatieAdmin": {
+              "SistemDocumente": "Un sistem de generare documente automatizat bazat pe draft-uri.",
+              "MonitorizareProduse": "Sistem de adaugare, stergere, modificare și filtrare a produselor.",
+              "SistemRapoarte": "Sistem de rapoarte pentru furnizori, clienti si contracte.",
+              "SistemFacturare": "Legare API de SmartBill sau alt soft de facturare pentru a genera facturile."
+          },
+          "SugestiiSuplimentare": {
+              "ImportExportCSV": "Sistem de import și export al datelor din platformă prin CSV.",
+              "SemnaturaElectronica": "Integrare API pentru semnătura electronică.",
+              "AplicatieClient": "Clienții vor avea posibilitatea de a se conecta la aplicație și de a vizualiza anumite informații legate de contul propriu."
+          },
+          "PretSiTimpDeImplementare": {
+              "DezvoltareBaza": "X Euro + TVA",
+              "DezvoltareCompleta": "X Euro + TVA",
+              "Observatii": "Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră."
+          }
+      },
+      "TermeniDeAchizitie": {
+          "Confidentialitate": "Această ofertă este strict confidențială.",
+          "PreturiFaraTVA": "Prețurile sunt fără TVA."
+      }
+  }
+}

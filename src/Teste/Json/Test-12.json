@@ -1,0 +1,88 @@
+{
+  "SolicitareaClientului": {
+    "Descriere": "Doresc să digitalizeze procesele lor de afaceri și să implementeze un program care să-i ajute să gestioneze rutele, stocul, arhivele furnizorilor, arhivele școlilor și arhivele produselor.",
+    "Cerinte": [
+      "Gestiunea rutelor: Capacitatea de a crea și gestiona rute pentru șoferi.",
+      "Gestiunea stocului: Capacitatea de a urmări stocul de lapte și corn școlar, Capacitatea de a urmări istoricul vânzărilor.",
+      "Arhive furnizori: Capacitatea de a stoca informații despre furnizori (nume, adresă, număr de telefon, date de contact), Capacitatea de a urmări istoricul comenzilor cu furnizorii.",
+      "Arhive școli: Capacitatea de a stoca informații despre școli (nume, adresă, număr de telefon, date de contact ale directorului), Capacitatea de a urmări istoricul livrărilor către școli.",
+      "Arhive produse: Capacitatea de a stoca informații despre produse (nume, cod, descriere), Capacitatea de a urmări istoricul vânzărilor pe produse.",
+      "Avize: Capacitatea de a genera avize de intrare, avize de corecție și avize de ieșire, Capacitatea de a personaliza aspectul avizelor, Capacitatea de a imprima avize pe imprimante matriceale.",
+      "Programul nu trebuie corelat cu un alt software și se desfășoară cu ajutorul excelurilor. Automatizarea și ușurarea muncii sunt binevenite."
+    ]
+  },
+  "Oferta": {
+    "Firma": "Test 12",
+    "ScopulDocumentului": [
+      "Această ofertă preliminară este bazată pe informațiile furnizate.",
+      "Etape esențiale de planificare necesare înainte de dezvoltare:"
+    ],
+    "EtapePlanificare": [
+      "Elaborarea unei diagrame logice pentru a defini arhitectura aplicației.",
+      "Crearea unei diagrame ER pentru a structura baza de date.",
+      "Realizarea unui design inițial în Figma pentru a elimina ambiguitatea interfeței grafice."
+    ],
+    "Preturi": {
+      "DiagramaLogicaSiER": "X Euro + TVA",
+      "ProiectFigma": "X Euro + TVA",
+      "Reducere": "Acesti bani se vor scadea din pretul total de dezvoltare odată acceptată oferta fermă.",
+      "Nota": "Oferta este orientativă și va fi ajustată în funcție de etapele de planificare."
+    },
+    "Definiti": {
+      "CRM": "Customer Relationship Management - Gestionarea Relațiilor cu Clienții.",
+      "ERP": "Enterprise Resource Planning - Planificarea Resurselor Enterprise."
+    },
+    "PropunereStructuraMinima": {
+      "GestiuneaCRM": [
+        "Dezvoltarea unui sistem CRM folosind React și MongoDB/Firebase.",
+        "Conectare utilizatori bazată pe roluri cu autentificare OTP prin SMS/email."
+      ],
+      "SistemPermisiuni": "Dezvoltarea unui sistem de permisiuni pentru atribuirea rolurilor și permisiunilor.",
+      "SistemAdaugareProduse": "Posibilitatea de a crea produse nelimitate cu informații complete (nume, cod, EAN, preț, stoc).",
+      "SistemAdaugareFurnizori": "Crearea de profile pentru furnizori cu informații relevante și posibilitatea de a lega produsele de furnizori.",
+      "GestiuneaStocului": "Monitorizarea stocului cu notificări pentru epuizare.",
+      "SistemAdaugareClienti": "Crearea de profile pentru școli cu informații relevante și urmărirea istoricului livrărilor.",
+      "SistemComenzi": "Crearea de comenzi programate cu sistem de statusuri și tracking.",
+      "SistemGenerareAvize": "Generarea avizelor cu șabloane pentru imprimante matriciale.",
+      "SectiuneSoferiSiLivrari": "Crearea de rute și atribuire comenzi șoferilor, cu opțiunea de a schimba statusul comenzilor și a vedea toate comenzile."
+    },
+    "PropunereStructuraAvansata": {
+      "GestiuneaCRMAvansata": [
+        "Dezvoltarea unui sistem CRM avansat cu React și MongoDB/Firebase.",
+        "Integrarea API-ului Google Maps pentru crearea automată a rutelor."
+      ],
+      "SistemPermisiuniAvansat": "Sistem avansat de permisiuni cu integrare suplimentară pentru fișiere PDF și imagini.",
+      "SistemAdaugareProduseAvansat": "Crearea de produse cu informații complete și stocare de fișiere în profilul produsului.",
+      "SistemAdaugareFurnizoriAvansat": [
+        "Crearea de profile pentru furnizori cu informații și posibilitatea de a lega produsele.",
+        "Stocarea și ștergerea fișierelor PDF, imagini în profilul furnizorilor."
+      ],
+      "GestiuneaStoculuiAvansata": "Monitorizarea stocului cu notificări legate de furnizori pentru cereri de stocuri.",
+      "SistemAdaugareClientiAvansat": [
+        "Crearea de profile pentru școli și alte entități, stocare fișiere în profilul clienților.",
+        "Urmărirea istoricului livrărilor și a documentelor."
+      ],
+      "SistemComenziAvansat": "Crearea și urmărirea comenzilor programate cu tracking avansat.",
+      "SistemGenerareAvizeAvansat": [
+        "Crearea de șabloane pentru avize/documente prin API-ul Google Docs.",
+        "Generarea documentelor și avizelor în format .doc sau .pdf."
+      ],
+      "SectiuneSoferiSiLivrariAvansata": "Optimizarea rutelor pentru șoferi și vizualizarea comenzilor."
+    },
+    "SugestiiSuplimentare": {
+      "TrackingTimpReal": "Adăugarea unui sistem de tracking în timp real pe hartă pentru șoferi folosind GPS.",
+      "IntegrareGoogleMaps": "Integrarea API-ului Google Maps pentru optimizarea rutelor.",
+      "AlternativaGoogleMaps": "Implementarea unui algoritm alternativ pentru calcularea rutelor."
+    },
+    "PretSiTimpDeImplementare": {
+      "StructuraMinima": "295 Ore cu 2 Programatori: X Euro + TVA",
+      "StructuraAvansata": "390 Ore cu 2 Programatori: X Euro + TVA",
+      "StructuraAvansataCuSugestii": "540 Ore + 150 Ore cu 2 Programatori: X Euro + TVA",
+      "Nota": "Timpul de livrare este influențat de complexitatea proiectului și cerințele."
+    },
+    "TermeniDeAchizitie": {
+      "Confidentialitate": "Această ofertă este strict confidențială.",
+      "PreturiFaraTVA": "Prețurile sunt fără TVA."
+    }
+  }
+}
