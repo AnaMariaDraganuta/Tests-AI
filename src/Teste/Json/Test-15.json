@@ -1,0 +1,127 @@
+{
+  "SolicitareaClientului": "Îmi puteți descrie cum este structurat fluxul de lucru al activității dvs. de la momentul în care contactați un client până la livrarea produsului sau serviciului?",
+  "Funcționalități": {
+    "LogarePacient": {
+      "Descriere": "Dezvoltați o interfață de autentificare securizată pentru pacienți.",
+      "Pași": [
+        "Colectați și validați informațiile de autentificare ale pacientului, cum ar fi numele de utilizator și parola.",
+        "Implementați măsuri de securitate, cum ar fi criptarea parolelor.",
+        "După autentificare, redirecționați utilizatorul către panoul principal al aplicației."
+      ]
+    },
+    "TrimitereaEmailMesajStatusAnalize": {
+      "Descriere": "Implementați un sistem de programare pentru analize medicale pentru pacienți.",
+      "Pași": [
+        "La momentul potrivit, trimiteți un email sau un mesaj către pacient pentru a-l informa cu privire la necesitatea efectuării analizelor medicale.",
+        "Asigurați-vă că informațiile trimise sunt clare și ușor de înțeles pentru pacient."
+      ]
+    },
+    "UrmărireaDosaruluiMedical": {
+      "Descriere": "Dezvoltați un sistem pentru a urmări dosarul medical al pacientului.",
+      "Pași": [
+        "Asigurați-vă că dosarul medical include informații esențiale, cum ar fi istoricul medical, prescripții medicale, rezultate ale analizelor, etc.",
+        "Implementați un sistem de căutare și sortare pentru a face ușor accesibile informațiile din dosarul medical."
+      ]
+    },
+    "ÎnregistrareaDosaruluiMedical": {
+      "Descriere": "Dezvoltați o interfață intuitivă pentru înregistrarea informațiilor medicale relevante ale pacientului.",
+      "Pași": [
+        "Asigurați-vă că datele introduse sunt valide și respectă standardele de securitate și confidențialitate în domeniul medical.",
+        "Implementați un sistem de validare pentru a evita erorile de introducere a datelor."
+      ]
+    },
+    "StocareaDosaruluiMedical": {
+      "Descriere": "Alegeți o soluție robustă de stocare a datelor pentru a păstra dosarele medicale în condiții de siguranță și accesibile.",
+      "Pași": [
+        "Implementați măsuri de securitate pentru a proteja informațiile sensibile ale pacientului.",
+        "Asigurați-vă că există o modalitate de backup a datelor pentru a preveni pierderea informațiilor în caz de evenimente neașteptate."
+      ]
+    },
+    "AccesDosarOricând": {
+      "Descriere": "Dezvoltați o interfață web sau mobilă prietenoasă pentru a permite pacienților accesul la dosarele lor medicale oricând.",
+      "Pași": [
+        "Asigurați-vă că sistemul este ușor de navigat și că pacienții pot găsi rapid informațiile de care au nevoie.",
+        "Implementați măsuri de securitate pentru a proteja datele personale ale pacienților.",
+        "Respectați reglementările și standardele privind confidențialitatea datelor medicale."
+      ]
+    }
+  },
+  "Oferta": {
+    "Nume": "Oferta 15",
+    "ScopulDocumentului": "Această ofertă preliminară este bazată pe informațiile pe care ni le-ați furnizat. Înainte de a începe efectiv dezvoltarea și de a vă putea oferi o estimare exactă a costurilor și timpului necesar, va fi necesar să parcurgem câteva etape esențiale de planificare.",
+    "EtapePlanificare": [
+      "Elaborarea unei diagrame logice pentru a defini arhitectura aplicației.",
+      "Crearea unei diagrame ER pentru a structura baza de date.",
+      "Realizarea unui design inițial în Figma pentru a elimina orice ambiguitate legată de interfața grafică."
+    ],
+    "CosturiPlanificare": {
+      "DiagramaLogicaSiER": "X Euro + TVA",
+      "ProiectFigma": "X Euro + TVA",
+      "Nota": "Acești bani se vor scădea din prețul total de dezvoltare odată acceptată oferta fermă."
+    },
+    "DefinitiiSiTehnologii": {
+      "ERP": "ERP este un acronim pentru 'Enterprise Resource Planning' sau 'Planificarea Resurselor Enterprise' în română. Este un sistem de software care ajută organizațiile să gestioneze și să integreze eficient toate procesele lor de afaceri, inclusiv contabilitatea, resursele umane, gestionarea stocurilor, producția, vânzările și multe altele. Scopul principal al unui sistem ERP este să faciliteze fluxurile de lucru interne și să ofere o imagine consolidată și în timp real a resurselor și proceselor organizației.",
+      "CRM": "CRM este un acronim pentru 'Customer Relationship Management' sau 'Gestionarea Relațiilor cu Clienții' în română. Este o strategie și un set de tehnologii utilizate pentru a gestiona relațiile și interacțiunile cu clienții. Scopul principal al unui sistem CRM este să îmbunătățească relațiile cu clienții, să optimizeze procesele de vânzare și marketing și să ofere o mai bună experiență generală pentru clienți.",
+      "React": "React este o bibliotecă JavaScript pentru construirea interfețelor de utilizator. Este utilizată pentru crearea unor interfețe de utilizator reactive și eficiente din punct de vedere al performanței.",
+      "Ionic": "Ionic este un framework open-source pentru dezvoltarea de aplicații mobile hibride. Utilizează tehnologii web precum JavaScript/React/Angular pentru a construi aplicații pentru platforme mobile, cum ar fi iOS și Android.",
+      "NestJS": "NestJS este un framework pentru dezvoltarea de aplicații server-side cu Node.js. Este construit pe baza arhitecturii modulare și utilizează TypeScript pentru a oferi un cod bine structurat și ușor de întreținut.",
+      "Firebase": "Firebase este o platformă de dezvoltare a aplicațiilor mobile. Furnizează servicii precum bază de date în timp real, autentificare, stocare și hosting, facilitând dezvoltarea rapidă și scalabilă a aplicațiilor.",
+      "MongoDB": "MongoDB este un sistem de gestionare a bazelor de date NoSQL, orientat pe documente. În loc de tabele, MongoDB folosește colecții și documente JSON-like, oferind flexibilitate și scalabilitate în stocarea datelor.",
+      "API": "API reprezintă un set de reguli și protocoale care permit comunicarea între diferite componente ale software-ului/aplicației. Este folosit pentru a permite integrarea între diferite aplicații sau servicii, facilitând schimbul de informații și funcționalități între ele."
+    },
+    "DezvoltareDeBaza": {
+      "Descriere": "Notă: Pentru structura proiectului de bază se alocă 2 programatori pentru dezvoltarea proiectului, fiecare având o implicare de 510 ore de lucru, în total fiind 1020 de ore.",
+      "Functionalitati": {
+        "AplicatieAdminCRM": {
+          "Descriere": "Aplicație Admin CRM - ERP",
+          "Functionalitati": [
+            "Autentificare Administrator și Medici: Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (obligatoriu).",
+            "Gestionare Pacienți și Medici: Administratorul va adăuga, modifica și șterge informațiile despre medici, pacienți, și informații medicale ale pacienților, precum istoricul facturilor, dosarul medical, planurile de tratament. Medicii vor adăuga, modifica și șterge informații în dosarul medical al fiecărui pacient.",
+            "Puncte de Lucru Diferite: Implementarea unui sistem pentru a opera pe mai multe puncte de lucru (unități medicale) cu opțiunea de comutare simplă între acestea.",
+            "Permisiuni: Implementarea unui sistem de permisiuni pentru gestionarea accesului utilizatorilor la datele sensibile, oferirea accesului diferiților medici la dosarul unui pacient, permiterea administratorului principal să poată adăuga mai mulți administratori.",
+            "Programări Medicale: Sistem de tip calendar în care administratorul și medicii pot crea, modifica și anula programările pentru pacienți.",
+            "Clasificarea Serviciilor Medicale: Definirea categoriilor specifice de servicii pentru fiecare punct de lucru, pentru a ușura procesul de programare pentru pacienți, și adăugarea și atribuirea medicilor la categoriile de servicii.",
+            "Monitorizarea Activității: Implementarea unui sistem de monitorizare a activității pacienților și medicilor pentru fiecare punct de lucru.",
+            "Documentație: Elaborarea unei documentații detaliate pentru utilizarea aplicației.",
+            "Gestionarea Dosarului Medical: Dezvoltarea unei secțiuni pentru vizualizarea, descărcarea și gestionarea dosarului medical al pacientului, inclusiv istoric medical, prescripții medicale, tratament anterior, actual, rezultate ale analizelor, documente, etc.",
+            "Sistem de Căutare și Sortare în Dosarul Medical: Implementarea funcțiilor de căutare și sortare a informațiilor din dosarul medical, utilizând API-ul Algolia.",
+            "Notificări: Integrarea API-ului OneSignal pentru trimiterea de notificări din aplicație și implementarea unui sistem automat de trimitere a email-urilor pentru notificări medicilor și administratorului atunci când un pacient creează, modifică sau anulează o programare."
+          ]
+        },
+        "AplicatiePacient": {
+          "Descriere": "Aplicație Pacient",
+          "Functionalitati": [
+            "Autentificare Pacient: Autentificare cu număr de telefon sau e-mail și parolă, cu primirea unui OTP (parolă opțională).",
+            "Sistem de Programare pentru Analize Medicale: Dezvoltarea unui sistem de tip calendar în care pacienții pot consulta disponibilitatea programărilor pentru analize, efectua, modifica și anula programări personale.",
+            "Notificări: Integrarea API-ului OneSignal pentru trimiterea de notificări din aplicație, API-ului SmsAdvert pentru a trimite mesaje pe telefoanele mobile și implementarea unui sistem automat de trimitere a email-urilor pentru notificări privind efectuarea analizelor periodice, programările medicale următoare, programările anulate de către medici sau administratori, statusul analizelor.",
+            "Dosar Medical: Secțiune în care pacientul poate vizualiza și descărca istoricul medical."
+          ]
+        }
+      }
+    },
+    "SugestiiSuplimentare": {
+      "Descriere": "Notă: Menționăm că secțiunea de sugestii suplimentare este opțională. Pentru această secțiune se alocă 2 programatori, fiecare având o implicare de 90 ore de lucru, în total fiind 180 de ore.",
+      "Sugestii": [
+        "Chat în Timp Real între Pacienți și Medici: Implementarea unui sistem de chat în timp real între pacienți, medici și administrator.",
+        "Plată Online: Integrare API Stripe pentru plata online.",
+        "Facturi: Sistem de facturare pentru utilizatori prin API SmartBill sau alte soluții similare."
+      ]
+    },
+    "PretSiTimpImplementare": {
+      "Descriere": "Fiecare punct poate fi supus modificării, editării sau realizării într-un mod mai sumar, cu reducerea funcționalităților, în vederea obținerii unei costuri mai reduse.",
+      "PretOrientativ": {
+        "DezvoltareDeBaza": "X Euro + TVA",
+        "DezvoltareDeBazaSiSugestiiSuplimentare": "X Euro + TVA"
+      },
+      "TimpEstimativ": "Timpul de livrare este influențat de complexitatea proiectului și cerințele dumneavoastră. Vom lucra în strânsă colaborare cu dumneavoastră pentru a respecta termenele stabilite."
+    },
+    "Echipa": {
+      "Descriere": "În cadrul actualei oferte, beneficiați de serviciile a doi programatori specializați în limbajul de programare necesar pentru proiectul dumneavoastră, un manager de proiect care va concepe și coordona proiectul, precum și un grafician responsabil de conceperea interfeței utilizatorului/aplicației. Fiecare echipă din cadrul societății noastre dispune de suportul unui mentor, responsabil de supravegherea și asistarea programatorilor.",
+      "CostPeOra": "X de euro pe oră"
+    },
+    "TermeniAchizitie": [
+      "Această ofertă este strict confidențială. Veziv IT Services SRL nu oferă permisiunea de a împărtăși detalii cu terțe părți.",
+      "Prețurile sunt fără TVA."
+    ]
+  }
+}

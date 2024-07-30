@@ -25,38 +25,51 @@ const convertDocxToJSONAndCSV = async (test) => {
     const sections = text.split('\n').filter(line => line.trim() !== '');
 
     const offer = {
-        SolicitareaClientului: sections[0], 
+        SolicitareaClientului: sections[0],
         Oferta: {
-            ScopulDocumentului: sections.slice(1, 6).join(' '), 
-            Definitii: {
-                React: sections[7], 
-                NestJS: sections[8], 
-                Firebase: sections[9], 
-                API: sections[10] 
-            },
-            PropunereStructura: {
-                AutentificareGestionareConturi: sections.slice(11, 19).join(' '), 
-                GenerareDocumente: sections.slice(20, 27).join(' '), 
-                GestionareDocumente: sections.slice(28, 32).join(' '), 
-                ExpediereSemnareDigitale: sections.slice(33, 41).join(' ') 
-            },
-            SugestiiSuplimentare: sections.slice(42, 44).join(' '), 
-            PretSiTimpDeImplementare: sections.slice(45, 49).join(' ') 
+            ScopulDocumentului: sections.slice(1, 4).join(' '),  
+            CăutareSiSincronizare: sections.slice(6, 8).join(' '),
+            IntegrareCalendar: sections[9]
         },
-        TermeniDeAchizitie: {
-            Confidentialitate: sections[50], 
-            PreturiFaraTVA: sections[51] 
-        }
+        ScopulDocumentului: {
+            Introducere:  sections[11],
+            Etape: sections.slice(12, 15).join(' '),  
+            Suplimentar :sections.slice(15, 20).join(' '),
+            Definitii:{
+                React: sections[22],
+                Ionic: sections[24],
+                NestJS: sections[26],
+                Firebase: sections[28],
+                MongoDB: sections[30],
+                API: sections[32]
+            }
+
+        },
+        DezvoltareDeBaza: {
+           Nota: sections[34],
+            Functionalitati: sections.slice(35, 71)  
+        },
+        SugestiiSuplimentare: {
+            Nota: sections[72],
+            Functionalitati: sections.slice(73, 79) 
+        },
+        PretSiTimpDeImplementare: {
+            Descriere :sections.slice(80, 82),
+            TimpEstimatDeLivrare: sections.slice(83, 85),  
+            Suplimentar: sections.slice(85, 87),
+        },
+        Echipa: sections.slice(89, 91),
+     
     };
 
     fs.writeFileSync(jsonFilePath, JSON.stringify(offer, null, 2));
 
     const flattenedOffer = flattenObject(offer);
     const csv = Papa.unparse([flattenedOffer]);
-    
+
     fs.writeFileSync(csvFilePath, csv);
 
-    console.log('Fisierul a fost convertit si salvat cu succes!');
+    console.log('Fișierul a fost convertit și salvat cu succes!');
 };
 
-convertDocxToJSONAndCSV('Test-9');
+convertDocxToJSONAndCSV('Test-16');
