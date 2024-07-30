@@ -106,3 +106,76 @@ pre {
   font-family: 'Courier New', Courier, monospace;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .app {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .app {
+    padding: 3rem;
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .error {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  textarea {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .error {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: 16px;
+    height: 150px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .error {
+    font-size: 16px;
+  }
+}
